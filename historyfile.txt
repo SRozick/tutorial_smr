@@ -1,0 +1,593 @@
+    1  sudo apt-get update
+    2  sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties
+    3  sudo apt-get repository ppa:webupd8team/sublime-text-3
+    4  sudo add-apt-repository ppa:webupd8team/sublime-text-3
+    5  sudo apt-get update
+    6  sudo apt-get install sublime-text-installer
+    7  cd ~/.config/sublime-text-3/Packages
+    8  mkdir ~/.config/sublime-text-3/Packages
+    9  cd .config
+   10  cd sublime-text-3
+   11  cd Packages
+   12  git clone https://github.com/wbond/sublime_package_control.git "Package Control"
+   13  cd "Package Control"
+   14  git checkout python3
+   15  export EDITOR="subl -w"
+   16  export BUNDLE_EDITOR="subl"
+   17  sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/bin
+   18  sudo apt-get update
+   19  sudo apt-get install python-software-repositories
+   20  sudo apt-get install python-software-properties
+   21  sudo apt-add-repository ppa:webupd8team/java
+   22  sudo apt-get update
+   23  sudo apt-get install oracle-java7-installer
+   24  sudo apt-get install git
+   25  sudo apt-get install git-core
+   26  cd Documents/Smartgit/smartgithg-6_0_4/bin
+   27  dir
+   28  bash smartgithg.sh
+   29  cd~/Documents/AptanaStudio3/Aptana_Studio_3
+   30  cd ~/Documents
+   31  dir
+   32  cd AptanaStudio3
+   33  cd Aptana_Studio_3
+   34  dir
+   35  bash AptanaStudio3.sh
+   36  sudo mv ~/Desktop/Aptana/aptana-studio-3.desktop /usr/share/applications
+   37  git config --global color.ui true
+   38  git config --global.user.name "SRozick"
+   39  git config --global user.name "SRozick"
+   40  git config --global user.email "steven.rozick@teachafish.org"
+   41  git config --global alias.co checkout
+   42  git config --global core.editor "subl -w"
+   43  ls -al ~./ssh
+   44  ssh-keygen -t rsa - C "steven.rozick@teachafish.org"
+   45  ssh-keygen -t rsa -C "steven.rozick@teachafish.org"
+   46  eval "$(ssh-agent -s)"
+   47  ssh-add ~/.ssh/id_rsa
+   48  xclip -sel clip < ~/.ssh/id_rsa.pub
+   49  sudo xclip -sel clip < ~/.ssh/id_rsa.pub
+   50  sudo apt-get install xclip
+   51  echo "alias clipboard='xclip -sel clip'" >> ~/.bashrc
+   52  sudo xclip -sel clip < ~/.ssh/id_rsa.pub
+   53  ssh -T git@github.com
+   54  cd ~
+   55  sudo apt-get update
+   56  \curl -sSL https://get.rvm.io | bash -s stable --ruby
+   57  ruby -v
+   58  source /home/srozick/.rvm/scripts/rvm
+   59  ruby -v
+   60  rvm use @global
+   61  gem install rails
+   62  ruby -v
+   63  rvm use 2.1.2 --default
+   64  gem install execjs
+   65  gem install therubyracer
+   66  gem install therubyrhino
+   67  source /home/srozick/.rvm/scripts/rvm
+   68  ruby -v
+   69  rails -v
+   70  rails server
+   71  dir
+   72  cd rails_projects
+   73  cd first_app
+   74  rails server
+   75  cd ~/Downloads
+   76  dir
+   77  md5sum pyv8-linux32-p3.zip
+   78  md5sum pyv8-binaries-master.zip
+   79  apt-get install alacarte
+   80  sudo apt-get install alacarte
+   81  cd ~/Applications/Startup
+   82  dir
+   83  srozick_start.sh
+   84  bash srozick_start.sh
+   85  cd ~
+   86  cd ..
+   87  dir
+   88  bash srozick_start.sh
+   89  cd ~
+   90  bash srozick_start.sh
+   91  dir
+   92  cd Applications/Startup
+   93  bash srozick_start.sh
+   94  ls -ld /home/srozick
+   95  sudo chmod 0750 /home/srozick
+   96  ls -ld /home/srozick
+   97  subl /etc/adduser.conf
+   98  cd ~
+   99  dir
+  100  cd Desktop
+  101  dir
+  102  mv adduser.conf /etc/adduser.conf
+  103  sudo mv adduser.conf /etc/adduser.conf
+  104  cd /etc/adduser.conf
+  105  cd /etc
+  106  dir
+  107  subl adduser.conf
+  108  bash . srozick_start.sh
+  109  cd ~/Applications/Startup
+  110  bash . srozick_start.sh
+  111  bash .srozick_start.sh
+  112  .srozick_start.sh
+  113  # lastlog
+  114  lastlog
+  115  sudo lastlog
+  116  cd ~
+  117  lastlog
+  118  dir
+  119  cd rails_projects
+  120  dir
+  121  cd first_app
+  122  git init
+  123  subl .gitignore
+  124  git add .
+  125  git status
+  126  git commit -m "Initial commit"
+  127  git log
+  128  git remote add origin git@github.com:SRozick/first_app.git
+  129  git push -u origin master
+  130  ssh -T -p 443 git@ssh.github.com
+  131  subl ~/.ssh/config
+  132  ssh -T git@github.com
+  133  chmod 600 ~/.ssh/config
+  134  ssh -T git@github.com
+  135  git push -u origin master
+  136  git checkout -b modify-README
+  137  git branch
+  138  git mv README.rdoc README.md
+  139  subl README.md
+  140  git status
+  141  git commit -a -m "Update the README file"
+  142  git checkout master
+  143  git merge modify-README
+  144  git branch -d modify-README
+  145  git push
+  146  rvm use gemset default@global
+  147  which gem
+  148  list gems
+  149  gem list
+  150  which gem
+  151  gem -v
+  152  rvm --create --rvmrc 2.1.2@first_app
+  153  subl /home/srozick/.rvm/gems/.rvmrc
+  154  gem list
+  155  gem install heroku
+  156  heroku keys:add
+  157  heroku create
+  158  git push heroku master
+  159  heroku plugins:install https://github.com/ddollar/heroku-push
+  160  heroku plugins:install https://github.com/SRozick/heroku-push
+  161  heroku push https://github.com/SRozick/first_app.git
+  162  heroku plugins:install https://github.com/ddollar/heroku-push
+  163  heroku push https://github.com/SRozick/first_app.git
+  164  gem remove heroku
+  165  gem uninstall heroku
+  166  wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+  167  heroku open
+  168  heroku create
+  169  open heroku
+  170  heroku push
+  171  open heroku
+  172  heroku open
+  173  heroku login
+  174  subl Gemfile
+  175  git status
+  176  git add .
+  177  git status
+  178  git commit -m "Heroku files"
+  179  git push -u origin master
+  180  git status
+  181  git checkout -b "Heroku branch"
+  182  git checkout -b "Heroku_branch"
+  183  subl config/database.yml
+  184  bundle install
+  185  heroku logs
+  186  heroku logs -a first_app
+  187  heroku list
+  188  git status
+  189  git log
+  190  heroku create first_app
+  191  heroku create first-app
+  192  heroku create first-app-smr
+  193  heroku list
+  194  git remote add heroku git@heroku.com:first-app-smr
+  195  git push heroku master
+  196  git push heroku master:master
+  197  git push https://heroku.com/first-app-smr master:master
+  198  git push heroku master:master
+  199  nodejs
+  200  sudo apt-get install nodejs
+  201  heroku run rake db:migrate
+  202  heroku open
+  203  dir
+  204  mkdir app/views/pages
+  205  rails s
+  206  git add .
+  207  git commit
+  208  git push
+  209  git status
+  210  git checkout master
+  211  git merge
+  212  git status
+  213  git push heroku master
+  214  git status
+  215  git branch
+  216  git tree
+  217  git log
+  218  git branch
+  219  git merge Heroku_branch
+  220  git push heroku master
+  221  git branch
+  222  heroku open
+  223  rails c
+  224  git status
+  225  git push
+  226  git status
+  227  git branch
+  228  git branch -d Heroku_branch
+  229  git status
+  230  git checkout -b "controller test"
+  231  git checkout -b "controller-test"
+  232  git status
+  233  git branch
+  234  cd app
+  235  rvm rvmrc to [.]ruby-version
+  236  ruby -v
+  237  rvm rvmrc to 2.1.2
+  238  cd app
+  239  dir
+  240  cd controllers
+  241  cd ..
+  242  cd app
+  243  cd controllers
+  244  dir
+  245  mv pages_controller.rb micah_pages_controller.old
+  246  rails generate controller pages_controller
+  247  rm pages_controller_controller.rb
+  248  cd ..
+  249  rm views/pages_cont
+  250  rails generate controller pages
+  251  cd ..
+  252  dir
+  253  cd logs
+  254  cd log
+  255  dir
+  256  subl development.log
+  257  ruby -ver
+  258  rails -v
+  259  rvm gemset list
+  260  rails server
+  261  git status
+  262  git add -a -m "use controller command
+  263  Apply rails generate controller pages, modify app/views/pages, modify config/routes.db"
+  264  git commit -a -m "use controller command
+  265  Apply rails generate controller pages, modify app/views/pages, modify config/routes.db"
+  266  git status
+  267  git add .
+  268  git status
+  269  git add .
+  270  git status
+  271  git add .
+  272  git status
+  273  cd ..
+  274  git add .
+  275  git status
+  276  git commit -a -m "use controller command
+  277  Apply rails generate controller pages, modify app/views/pages, modify config/routes.db"
+  278  git status
+  279  git checkout master
+  280  git status
+  281  git merge controller-test
+  282  git status
+  283  git push
+  284  git status
+  285  git branch
+  286  git branch -d controller-test
+  287  git status
+  288  git push heroku master
+  289  bundle install
+  290  git push heroku master
+  291  git status
+  292  git add .
+  293  git merge
+  294  git commit
+  295  git status
+  296  git push
+  297  git status
+  298  git push heroku master
+  299  heroku open
+  300  irb
+  301  subl MegaGreeter.class
+  302  cd ~/Documents
+  303  mkdir ruby_practice
+  304  mv ri20min.rb ruby_practice/ri20min.rb
+  305  cd ruby_practicew
+  306  cd ruby_practice
+  307  dir
+  308  ls
+  309  ruby ri20min.rb
+  310  cd ~/rails_projects
+  311  rails new skel_app
+  312  cd skel_app
+  313  git init
+  314  git add .
+  315  git commit -m "Initial commit"
+  316  git remote add origin git@github.com:srozick/skel_app.git
+  317  git push -u origin master
+  318  git checkout -b Init-config
+  319  git status
+  320  bundle install
+  321  git status
+  322  rails generate scaffold User name:string email:string
+  323  git status
+  324  git add . 
+  325  git status
+  326  git commit -a -m "Modified gitignore and created scaffold for Users"
+  327  git checkout master
+  328  git status
+  329  git branch
+  330  git merge Init-config
+  331  git branch
+  332  git status
+  333  git push
+  334  git status
+  335  git heroku push
+  336  git push heroku master
+  337  git heroku push master
+  338  heroku create skel_app_SMR
+  339  heroku create skel-app-SMR
+  340  heroku create skelAppSMR
+  341  heroku ?
+  342  heroku help
+  343  heroku version
+  344  heroku create help
+  345  heroku create skel-app-SMR
+  346  heroku create skel-app
+  347  git push heroku master
+  348  git status
+  349  git push heroku master
+  350  bundle exec rake db:migrate
+  351  rails s
+  352  -T db
+  353  bundle exec rake -T db
+  354  bundle exec rake -T
+  355  rails s
+  356  rails generate scaffold Micropost content:string user_id:integer
+  357  bundle exec rake db:migrate
+  358  rails s
+  359  bundle exec rake db:migrate
+  360  rails s
+  361  rails console
+  362  bundle exec rake db:migrate
+  363  rails console
+  364  git status
+  365  git add .
+  366  git status
+  367  git commit -m "Finish demo app"
+  368  git push
+  369  git config --global push.default simple
+  370  git status
+  371  git branch
+  372  heroku create
+  373  git push heroku master
+  374  bundle install
+  375  git push heroku master
+  376  subl Gemfile
+  377  bundle install
+  378  bundle update
+  379  bundle install
+  380  git push heroku master
+  381  bundle install
+  382  bundle update
+  383  bunle install
+  384  bundle install
+  385  git push heroku master
+  386  heroku logs
+  387  bundle install
+  388  bundle update
+  389  bundle install
+  390  git push heroku master
+  391  git status
+  392  git add .
+  393  git commit -m "Modified Gemfile"
+  394  git status
+  395  git push
+  396  git status
+  397  git heroku push master
+  398  git push heroku master
+  399  rvm 2.1.2
+  400  which gem
+  401  list gems
+  402  show gems
+  403  rvm gemset name
+  404  rvm gemset list
+  405  rvm gem list
+  406  gem list
+  407  rvm gemset name
+  408  rvm default@global
+  409  rvm gemset name
+  410  rvm 2.1.2
+  411  rvm gemset list
+  412  rvm gem list
+  413  list gems
+  414  gem list
+  415  gem install rails_12factor
+  416  rvm skel_app
+  417  rvm skel_app@2.1.2
+  418  rvm 2.1.2@skel_app
+  419  rvm --create --rvmc 2.1.2@skel_app
+  420  rvm --create --rvmrc 2.1.2@skel_app
+  421  gem list
+  422  rvm 2.1.2
+  423  gem list
+  424  rvm 2.1.2@default
+  425  gem list
+  426  rvm 2.1.2@skel_app
+  427  gem list
+  428  bundle update
+  429  bundle install
+  430  git status
+  431  git add .
+  432  git commit -m "Updated gemset"
+  433  git push
+  434  git status
+  435  git push heroku master
+  436  heroku open
+  437  rails s
+  438  cd ..
+  439  mkdir skel_app2
+  440  rm skel_app2
+  441  rails new skel_app2 --database=postgresql
+  442  rvm 2.1.2
+  443  gem list
+  444  rvm --create --rvmrc 2.1.2@skel_app3
+  445  rvm 2.1.2@skel_app3
+  446  which heroku
+  447  gem uninstall heroku --all
+  448  which heroku
+  449  heroku --version
+  450  rvm gemset list
+  451  gem list
+  452  rvm 2.1.2@global
+  453  gem list
+  454  rvm 2.1.2@default
+  455  gem list
+  456  rvm 2.1.2@skel_app3
+  457  gemset list
+  458  list gemset
+  459  rvm gemset list
+  460  rails new skel_app3 --database=postgresql
+  461  cd skel_app3
+  462  rvm rvmrc warning ignore all.rvmrcs
+  463  subl Gemset
+  464  subl Gemfile
+  465  bundle update
+  466  bundle install
+  467  git init
+  468  subl .gitignore
+  469  git add .
+  470  git commit -m "Initial commit"
+  471  git remote add origin git@github.com:SRozick/skel_app3.git
+  472  git push -u origin master
+  473  git remote add origin git@github.com:SRozick/skel_app3.git
+  474  git push -u origin master
+  475  git status
+  476  rails generate scaffold User name:string email:string
+  477  bundle exec rake db:migrate
+  478  bundle update
+  479  cd rails_apps
+  480  dir
+  481  cd rails_projects
+  482  cd skel_app3
+  483  bundle install
+  484  ruby -v
+  485  rails -v
+  486  rails -version
+  487  source /home/srozick/.rvm/scripts/rvm
+  488  bundle install
+  489  git status
+  490  git add .
+  491  git commit -m "Scaffold created"
+  492  git push
+  493  bundle exec rake db:migrate
+  494  rake db:create db:migrate
+  495  bundle exec rake db:migrate
+  496  rails s
+  497  generate scaffold Micropost content:string user_id:integer
+  498  rails generate scaffold Micropost content:string user_id:integer
+  499  bundle exec rake db:migrate
+  500  rails s
+  501  rails console
+  502  cd ..
+  503  cd skel_app
+  504  console
+  505  rails console
+  506  bundle update
+  507  bundle install
+  508  git status
+  509  rails console
+  510  subl Gemfile
+  511  bundle update
+  512  bundle install
+  513  git status
+  514  git commit -a -m "Modified Gemfile"
+  515  git push
+  516  rails console
+  517  cd app
+  518  dir
+  519  cd controllers
+  520  dir
+  521  subl users_controller.rb
+  522  cd ..
+  523  dir
+  524  cd models
+  525  dir
+  526  subl user.rb
+  527  subl microposts.rb
+  528  subl micropost.rb
+  529  cd ..
+  530  dir
+  531  subl Gemfile
+  532  cd ..
+  533  cd skel_app3
+  534  console
+  535  rails console
+  536  git status
+  537  git add .
+  538  git commit -m "Finish demo app"
+  539  git status
+  540  git push
+  541  git status
+  542  heroku create skel_app3
+  543  heroku create skel-app3
+  544* 
+  545  heroku run rake db:migrate
+  546  heroku log
+  547  heroku logs
+  548  heroku open
+  549  heroku ps
+  550  git status
+  551  git commit -a -m "Update routes.rb"
+  552  git push
+  553  git status
+  554  git push heroku master
+  555  bundle update
+  556  bundle install
+  557  git status
+  558  git commit -a -m "Modify routes.rb"
+  559  git push
+  560  git heroku push master
+  561  git push heroku master
+  562  heroku open
+  563  cd ..
+  564  cd skel_app
+  565  dir
+  566  heroku open
+  567  git status
+  568  cd ..
+  569  rvm 2.1.2@rails_smr
+  570  rvm --create --rvmrc 2.1.2@tutorial_smr
+  571  rails new tutorial_smr --skip-test-unit --database=postgresql
+  572  cd tutorial_smr
+  573  dir
+  574  subl Gemfile
+  575  cp ~/rails_projects/skel_app3/Gemfile ~rails_projects/tutorial_smr/Gemfile
+  576  cp ~/rails_projects/skel_app3/Gemfile ~rails_projects/tutorial_smr/
+  577  cp ~/rails_projects/skel_app3/Gemfile ~rails_projects/tutorial_smr
+  578  cp ~/rails_projects/skel_app3/Gemfile ~/rails_projects/tutorial_smr/Gemfile
+  579  subl Gemfile
+  580  cd rails_projects
+  581  gem list
+  582  rvm 2.1.2@default
+  583  gem list
+  584  gem install capybara
+  585  gem install rspec-rails
+  586  git init
+  587  git add .
+  588  git commit -m "Initial commit"
+  589  bundle update
+  590  bundle install --without production
+  591  rails generate rspec:install
+  592  history
+  593  history > historyfile.txt
