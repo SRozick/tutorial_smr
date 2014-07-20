@@ -591,3 +591,34 @@
   591  rails generate rspec:install
   592  history
   593  history > historyfile.txt
+  594  rvm 2.1.2@tutorial_smr
+  595  git status
+  596  git add .
+  597  git commit -a -m "New Project setup complete"
+  598  git push
+  599  git remote add origin https://github.com/SRozick/testtest.git
+  600  git push
+  601  git remote add origin https://github.com/SRozick/tutorial_smr.git
+  602  git man
+  603  man git
+  604  git remote man
+  605  git remote remove https://github.com/SRozick/tutorial_smr.git
+  606  git remote add origin https://github.com/SRozick/tutorial_smr.git
+  607  git remote -v
+  608  git remote remove origin
+  609  git remote -v
+  610  git remote add origin https://github.com/SRozick/tutorial_smr.git
+  611  git remote remove origin
+  612  git remote add origin https://github.com/SRozick/tutorial_smr.git
+  613  git push -u origin master
+  614  git mv README.rdoc README.md
+  615  git commit -a -m "Improve the README"
+  616  git push
+  617  git remote remove origin
+  618  rit remote add origin git@github.com:SRozick/tutorial_smr.git
+  619  git remote add origin git@github.com:SRozick/tutorial_smr.git
+  620  git push -u origin master
+  621  git status
+  622  heroku create
+  623  git push heroku master
+  624  history > historyfile.txt
